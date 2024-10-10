@@ -5,10 +5,11 @@
     $variable = "php";
     var_dump($variable);
     echo "<br>";
+    echo $variable;
     $variable = true;
     var_dump($variable);
     echo "<br>";
     unset($variable);
     var_dump($variable);
-    
+
 ?>
