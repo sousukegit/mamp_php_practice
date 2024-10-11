@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <th>名前</th><th>性別</th><th>住所</th>
+        </tr>
+        <?php
+            $member = [
+                ["真鍋颯一朗","男","東京都杉並区"],
+                ["平満菜々子","女","愛媛県今治市"],
+                ["山路一貴","男","神奈川県横浜市"]
+            ];
+            foreach($member as $person){
+                echo <<<LOOP
+                <tr>
+                    <td>$person[0]</td><td>$person[1]</td><td>$person[2]</td>
+                </tr>
+                LOOP;
+            }
+        ?>
+    </table>
+</body>
+</html>
