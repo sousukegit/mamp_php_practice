@@ -28,9 +28,7 @@
                     echo "郵便番号ではありません";
                 }
             }
-            else{
-                echo "mada";
-            }
+
 
         ?>
     </form>

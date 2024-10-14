@@ -16,17 +16,18 @@
         <?php
             
 
-            if(isset($_POST["where"])&&!empty($_POST["where"])){
+            if(isset($_POST["where"])){
                 if(preg_match("/^[0-9]{3}-[0-9]{4}$/",$_POST["where"])){
                     echo "郵便番号です";
+                }
+                elseif(empty($_POST["where"])){
+                    echo "郵便番号を入力してください";
                 }
                 else{
                     echo "郵便番号ではありません";
                 }
             }
-            elseif(empty($_POST["where"])){
-                echo "郵便番号を入力してください";
-            }
+           
 
         ?>
     </form>
